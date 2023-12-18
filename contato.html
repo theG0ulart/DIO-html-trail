@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica - Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre a Clínica</a></li>
+            <li><a href="atendimento.html">Horário de Atendimento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="contato">
+        <img src="imagem_contato.jpg" alt="Imagem Contato">
+    </header>
+
+    <section class="content">
+        <h1>Entre em Contato</h1>
+        <p>Para agendar consultas ou tirar dúvidas, entre em contato conosco.</p>
+        <ul>
+            <li>Telefone: (XX) XXXX-XXXX</li>
+            <li>WhatsApp: (XX) XXXX-XXXX</li>
+        </ul>
+        <p>Endereço: Rua da Clínica, 123 - Bairro, Cidade</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-46.000000!3d-23.000000!4m3!3m2!1s0x0:0x0!2zMjPCsDE4JzE2LjUiUyA0NsKwMzUnMDcuMiJX!5e0!3m2!1sen!2sbr!4v1234567890123!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        <form action="enviar_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Entre em contato: Telefone: (XX) XXXX-XXXX | E-mail: contato@clinica.com</p>
+    </footer>
+
+</body>
+</html>
